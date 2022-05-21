@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Contact Me</title>
-        <meta charset="UTF-8">
-        <link href="contact.css" rel="stylesheet" type="text/css">
-
-    </head>
-    
-    <header>
-        <h1>CONTACT<span>ME</span></h1>
-     </header>
-            <nav>
-                <ul>
-                    <li style="position:fixed;  top: 20px; right: 0; bottom: 0; left: 820px;"> <a href="index.html">Go back to Home</a></li>
-                </ul>
-            </nav>   
-                
-    <body>
-        
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <a href="index.html">Go back to home</a>
+    <div class="contact">
+        <div class="contact-title">
+            <h1>CONTACT ME</h1>
+        </div>
+        <div class="form-container">
+            <form action="https://formsubmit.co/yomeira@yahoo.com" method="POST">
+                <div class="form-name">
+                    <input type="text" id="name" placeholder="Name" required>
+                </div>
+                <div class="form-email">
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <div class="form-message">
+                    <textarea name="message" id="message" placeholder="Message..." required></textarea>
+                </div>
+                <div class="center-align">
+                    <button type="submit">Send</button>
+                </div>
+                <input type="hidden" name="_subject" value="New submission!">
+            </form>
+        </div>
+    </div>
+</body>
 </html>
